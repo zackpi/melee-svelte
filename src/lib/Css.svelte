@@ -1,62 +1,17 @@
 <script lang="ts">
-  import src from "../assets/svelte.png";
-  import CharIcon from "./CharIcon.svelte";
+  import IconGrid from "./IconGrid.svelte";
+  import CardList from "./CardList.svelte";
 </script>
 
 <div>
-  <ul>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-  </ul>
-  <ul>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-  </ul>
-  <ul>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-    <li><CharIcon {src} name="Dr. MARIO" /></li>
-  </ul>
+  <IconGrid />
+  <CardList />
 </div>
 
 <style>
   div {
-    z-index: 100;
     display: flex;
-    flex-flow: column;
-    gap: 0.2em;
-  }
-
-  ul {
-    list-style-type: none;
-    display: flex;
-    gap: 0.2em;
-    justify-content: center;
-  }
-
-  li:first-child {
-    margin-top: 0.4em;
-  }
-
-  li:last-child {
-    margin-top: 0.4em;
+    flex-flow: column nowrap;
+    gap: 1em;
   }
 </style>
