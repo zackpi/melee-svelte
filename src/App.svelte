@@ -1,7 +1,7 @@
 <script lang="ts">
+  import "./reset.css";
   import Hud from "./lib/Hud.svelte";
   import Css from "./lib/Css.svelte";
-  import "./reset.css";
   import Cursor from "./lib/Cursor.svelte";
 
   let x = 400;
@@ -15,7 +15,6 @@
 <main on:mousemove={moveCursor}>
   <Hud />
   <Css />
-
   <Cursor {x} {y} />
 </main>
 
@@ -24,17 +23,12 @@
     --darkgray: rgb(20, 20, 20);
   }
 
-  :global(#app) {
-    background-color: rgb(20, 16, 36);
-    width: 100%;
-    height: 100%;
-  }
-
   :global(p, h1) {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
 
   main {
+    background-color: rgb(20, 16, 36);
     position: relative;
     width: 100%;
     height: 100%;

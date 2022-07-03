@@ -1,16 +1,30 @@
-<div id="settings">
+<div>
   <p>4-man survival test!</p>
 </div>
 
 <style>
-  #settings {
+  div {
     --shape: polygon(4% 0%, 98% 0%, 100% 50%, 96% 100%, 2% 100%, 0% 50%);
     clip-path: var(--shape);
+    position: relative;
+    padding: 0.8em 2em 0.8em 2em;
+    transition: transform 100ms;
+  }
+  div:hover {
+    transform: scale(1.05);
+  }
+  div::before {
+    position: absolute;
     background-color: gray;
-    padding: 0.1em 0.8em 0.1em 0.8em;
+    content: "";
+    top: 0.6em;
+    left: 0.6em;
+    width: calc(100% - 1.2em);
+    height: calc(100% - 1.2em);
+    clip-path: var(--shape);
   }
 
-  #settings p {
+  div p {
     width: 100%;
     height: 100%;
     clip-path: var(--shape);
