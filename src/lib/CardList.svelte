@@ -11,7 +11,7 @@
 
 <style>
   ul {
-    border: 1px solid red;
+    counter-reset: player;
     list-style: none;
     display: flex;
     gap: 1em;

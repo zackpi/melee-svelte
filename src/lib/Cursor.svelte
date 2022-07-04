@@ -21,5 +21,7 @@
     margin-left: -1.6em;
     margin-top: -1.6em;
     pointer-events: none;
+    filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.5))
+      drop-shadow(5px 8px 5px rgba(0, 0, 0, 0.3));
   }
 </style>
